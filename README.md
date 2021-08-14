@@ -10,6 +10,8 @@
 
 ### Template preview
 ![ The trailer of the Burger menu template][product-screenshot]&nbsp;
+
+### Template on mobile devices preview
 ![ The trailer of the Burger menu template on mobile devices][product-screenshot-mobile_devices]
 
 <!-- TOOLS -->
@@ -37,7 +39,7 @@
 
 The burger menu opens when you click on the corresponding button. 
 Scrolling of the page is blocked when the menu is opened. Also, the content of a page will be blurred.
-The menu closes when you click on the close button (cross in the upper right corner), or the page area around the menu.
+The menu closes when you click on the close button (a cross to the left of the menu title), or the page area around the menu.
 
 ## [Come here](https://modal-window-react.herokuapp.com/) to watch an example on your Web Browser
 
@@ -99,6 +101,17 @@ $ yarn add body-scroll-lock
 or
 
 $ npm install body-scroll-lock
+```
+- [Materialize icons](https://materializecss.com/icons.html)
+Materialize storage of icons has included 932 Material Design Icons courtesy of Google.<br>
+Link to Materialize icons storage: [https://materializecss.com/icons.html](https://materializecss.com/icons.html)<br>
+o be able to use these icons, you must include this line in the `<head>` portion of your HTML code:
+```sh
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+```
+To use these icons, use the material-icons class on an element and provide the ligature as the text content
+```sh
+<i class="material-icons">add</i>
 ```
 
 <!-- MARKDOWN LINKS & IMAGES -->
