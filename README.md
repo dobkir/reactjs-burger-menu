@@ -1,4 +1,4 @@
-# ![Burger menu template](https://img.icons8.com/material-outlined/24/000000/menu--v3.png) Simple template of the burger menu for ReactJS ![Burger menu template](https://img.icons8.com/material-outlined/24/000000/menu--v3.png)
+# ![Burger menu template](https://img.icons8.com/material-outlined/36/7bb9ec/menu--v3.png) Simple template of the burger menu for ReactJS ![Burger menu template](https://img.icons8.com/material-outlined/36/7bb9ec/menu--v3.png)
 
 [![Contributors][contributors-shield]][contributors-url]&nbsp;
 [![Forks][forks-shield]][forks-url]&nbsp;
