@@ -1,4 +1,8 @@
-import { clearAllBodyScrollLocks, disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
+import {
+  clearAllBodyScrollLocks,
+  disableBodyScroll,
+  enableBodyScroll
+} from "body-scroll-lock";
 import { useEffect, useRef, useState } from "react";
 import { Redirect, Route } from "react-router-dom";
 import "./App.css";
@@ -8,6 +12,8 @@ import { Menu } from "./Menu/Menu";
 function App() {
   const [menuActive, setmenuActive] = useState(false);
   const toggleMenu = () => setmenuActive(!menuActive);
+  const closeMenu = () => setmenuActive(false);
+  const stopPropagation = (e) => e.stopPropagation();
 
   const menuRef = useRef();
 
@@ -34,7 +40,7 @@ function App() {
   return (
     <div className="app">
       <nav className="nav">
-        <div className="burger-btn" onClick={toggleMenu}>
+        <div className={menuActive ? "burger-btn active" : "burger-btn"} onClick={toggleMenu}>
           <span />
         </div>
       </nav>
@@ -46,7 +52,14 @@ function App() {
         <Route path='/about' render={() => <AboutUs />} />
         <Route path='/contacts' render={() => <Contacts />} />
       </main>
-      <Menu active={menuActive} setActive={setmenuActive} header={"Hamburger menu"} items={items} menuRef={menuRef} />
+      <Menu
+        active={menuActive}
+        header={"Hamburger menu"}
+        items={items}
+        closeMenu={closeMenu}
+        menuRef={menuRef}
+        stopPropagation={stopPropagation}
+      />
     </div>
   );
 }

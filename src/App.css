@@ -1,8 +1,3 @@
-html {
-  --burger-height: 20px;
-  --burger-line-thickness: 2px;
-}
-
 body {
   background-color: #f0f0f0;
   font-family: -apple-system,
@@ -61,25 +56,35 @@ body {
 }
 
 .burger-btn {
-  height: var(--burger-height);
+  height: 20px;
   width: 30px;
   margin-left: 20px;
 
   cursor: pointer;
 
   position: relative;
+
+  transition: all .2s linear;
 }
 
 .burger-btn:before,
 .burger-btn span,
 .burger-btn:after {
-  height: var(--burger-line-thickness);
+  height: 2px;
   width: 30px;
 
   background-color: #0c0c0c;
 
   content: "";
   position: absolute;
+
+  transition: all .2s linear;
+}
+
+.burger-btn:hover.burger-btn span,
+.burger-btn:hover.burger-btn:before,
+.burger-btn:hover.burger-btn:after {
+  background-color: #f0f0ff;
 }
 
 .burger-btn:before {
@@ -87,9 +92,49 @@ body {
 }
 
 .burger-btn span {
-  top: calc((var(--burger-height) - (var(--burger-line-thickness))) / 2);
+  top: 50%;
+
+  transform: translateY(-50%);
 }
 
 .burger-btn:after {
   bottom: 0;
+}
+
+.burger-btn.active {
+  transform: translateY(60px);
+}
+
+.burger-btn.active span {
+  opacity: 0;
+}
+
+.burger-btn.active.burger-btn:before,
+.burger-btn.active.burger-btn:after {
+  background-color: #9ac5e9;
+
+  top: 50%;
+
+  transition: all .2s linear;
+}
+
+.burger-btn.active.burger-btn:before {
+  transform: rotate(45deg);
+}
+
+.burger-btn.active.burger-btn:after {
+  transform: rotate(-45deg);
+}
+
+.burger-btn:hover.active.burger-btn:before,
+.burger-btn:hover.active.burger-btn:after {
+  background-color: #f0f0ff;
+}
+
+.burger-btn:hover.active.burger-btn:before {
+  transform: rotate(0deg);
+}
+
+.burger-btn:hover.active.burger-btn:after {
+  transform: rotate(-90deg);
 }
