@@ -1,4 +1,4 @@
-# ![Burger menu template](https://img.icons8.com/material-outlined/36/7bb9ec/menu--v3.png) Simple template of the burger menu for ReactJS ![Burger menu template](https://img.icons8.com/material-outlined/36/7bb9ec/menu--v3.png)
+# ![Burger menu template logo icon](https://img.icons8.com/material-outlined/36/7bb9ec/menu--v3.png) Simple template of the burger menu for ReactJS ![Burger menu template logo icon](https://img.icons8.com/material-outlined/36/7bb9ec/menu--v3.png)
 
 [![Contributors][contributors-shield]][contributors-url]&nbsp;
 [![Forks][forks-shield]][forks-url]&nbsp;
@@ -40,8 +40,6 @@
 The burger menu opens when you click on the corresponding button. 
 Scrolling of the page is blocked when the menu is opened. Also, the content of a page will be blurred.
 The menu closes when you click on the close button (a cross to the left of the menu title), or the page area around the menu.
-
-## [Come here](https://modal-window-react.herokuapp.com/) to watch an example on your Web Browser
 
 <!-- GETTING STARTED -->
 ## Running on your local machine
